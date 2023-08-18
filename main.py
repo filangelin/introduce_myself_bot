@@ -24,11 +24,11 @@ def start_command_handler(message: types.Message):
 
 @bot.message_handler(commands=['hack'])
 def start_command_handler(message: types.Message):
-    git = "cd"
+    git = "https://github.com/filangelin/introduce_myself_bot"
     bot.send_message(
 
         chat_id=message.chat.id,
-        text=f'Лови ссылку на исходники <code>{git}</code>',
+        text=f'Лови ссылку на исходники: <code>{git}</code>',
         reply_markup=keyboard
     )
 
