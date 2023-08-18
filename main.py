@@ -28,7 +28,7 @@ def start_command_handler(message: types.Message):
     bot.send_message(
 
         chat_id=message.chat.id,
-        text=f'Лови ссылку на исходники: <code>{git}</code>',
+        text=f'Лови ссылку на исходники: {git}',
         reply_markup=keyboard
     )
 
